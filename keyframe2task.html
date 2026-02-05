@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>NP Digital</title>
+<style>
+    body{
+        background-color: rgb(227, 226, 226);
+    }
+    .circle-cont {
+        position: absolute;
+        top: 50%;
+        left: 32.5%;
+        transform: translate(-50%, -50%);
+        width: 1000px;
+        height: 1000px;
+    }
+    .circle {
+        width: 1500px;
+        height: 1500px;
+        margin-top:30vw;
+        border:2px solid rgb(93, 92, 92);
+        border-radius: 50%;
+        background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20210729/pngtree-business-abstract-gray-white-gradient-background-image_754005.jpg);
+        opacity: 100%;
+        position: absolute;
+        animation: spin 10s linear infinite, glow3 2s infinite alternate;
+    }
+    @keyframes rotate {
+        from { transform:rotate(0deg); }
+        to { transform: rotate(360deg); }
+    }
+    @keyframes glow3 {
+         0%{ box-shadow: 0 0 25px  rgb(246, 210, 176); }
+         20% { box-shadow: 0 0 30px  rgb(242, 157, 108); }
+        50% { box-shadow: 0 0 35px  rgb(233, 155, 77); }
+        80% { box-shadow: 0 0 40px  rgb(241, 136, 66); }
+        100% { box-shadow: 0 0 50px  rgb(255, 115, 0); }
+    }
+    @keyframes spin {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+    }
+    .logo {
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        font-size: 80px;
+    }
+    .logo .np {
+        color: rgb(255, 132, 0);
+        border: 8px solid rgb(255, 132, 0);
+        padding: 10px;
+        animation: glow 2s infinite alternate;
+    }
+    @keyframes glow {
+         0%{ box-shadow: 5px 5px 15px rgb(249, 196, 140); }
+         20% { box-shadow: 10px 10px 15px rgb(239, 152, 71); }
+        50% { box-shadow: 15px 15px 15px rgb(234, 133, 39); }
+        80% { box-shadow: 15px 15px 20px rgb(214, 101, 11); }
+        100% { box-shadow: 20px 20px 20px rgb(255, 129, 11); }
+    }
+
+    .logo .digital {
+        color: black;
+        animation:glow1 2s infinite alternate;
+    }
+    @keyframes glow1 {
+         0%{ text-shadow: 5px 5px 15px rgb(165, 165, 165); }
+         20% { text-shadow: 10px 10px 15px rgb(180, 180, 180); }
+        50% { text-shadow: 15px 15px 15px rgb(120, 119, 119); }
+        80% { text-shadow: 15px 15px 20px rgb(82, 81, 81); }
+        100% { text-shadow: 20px 20px 20px rgb(36, 36, 36); }
+    }
+    .box{
+        width:1650px;
+        height:1200px;
+        background-color: #000000;
+        margin-top:55vw;
+        margin-left:-10vw;
+        position: relative;
+    }
+    .company{
+        position: absolute;
+        top: 140%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 35px;
+        font-weight: bold;
+        color: rgb(93, 92, 92);
+        opacity:55%;
+    }
+</style>
+<body>
+    <div class="circle-cont">
+        <div class="circle"></div>
+        <div class="logo">
+        <div> <h3><span class="np">NP</span> <span class="digital">Digital</span></h3>
+            </div>
+         <div class="company">
+ <pre>ADWEEK   AoY   Inc.Best     OMMA       INC.
+              Workplaces    AWARDS     500
+            </pre>
+                                
+         </div>
+        </div>
+        <div class="box"></div>
+    </body>
+</html>
